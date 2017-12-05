@@ -1,7 +1,7 @@
 {
   "name": "notepaper-system",
   "version": "1.0.0",
-  "description": "This is a notepaper app which run in browser",
+  "description": "This is a notepaper app which runs in browser",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/GetWang/notepaper-system/issues"
   },
-  "homepage": "https://github.com/GetWang/notepaper-system#readme"
+  "homepage": "https://github.com/GetWang/notepaper-system#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  }
 }

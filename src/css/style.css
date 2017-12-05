@@ -1,0 +1,84 @@
+/* 整体样式 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #d6e6c6 url('../imgs/bg.jpg');
+  background-size: cover;
+  font: 14px/1.3 "微软雅黑";
+}
+/* 
+ * 创建与清空 
+ */
+.button {
+  padding: 8px 15px;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#create {
+  background-color: #16c98d;
+  margin-left: 120px;
+}
+#clear {
+  background-color: #fa5e5b;
+  margin-left: 15px;
+}
+/* 
+ * 便笺
+ */
+.m-note {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  padding-top: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff046;
+}
+.m-note .u-close {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: url('../imgs/close.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.m-note:hover .u-close {
+  display: block;
+  z-index: 2;
+  cursor: pointer;
+}
+.m-note .u-dragger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background-color: rgba(221, 170, 0, 0.6);
+}
+.m-note .u-editor {
+  position: absolute;
+  top: 25px;
+  bottom: 30px;
+  left: 10px;
+  right: 10px;
+  outline: none;
+  overflow: auto;
+}
+.m-note .u-timestamp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #db0;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  font: 12px;
+  color: #fff;
+}
